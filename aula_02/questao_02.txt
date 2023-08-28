@@ -1,0 +1,8 @@
+Questão 2) Para que a RAD possa cumprir o seu objetivo que é o de reduzir o tempo de entrega deprodutos, ela precisa de ferramentas que facilitem o desenvolvimento de software. Um dos recursosmais importantes para atingir tal objetivo é o uso de framework. Em relação aos frameworks paradesenvolvimento de aplicações RAD, selecione a opção CORRETA:
+a) A escolha de um framework sempre deve levar em consideração as necessidades do projeto quese deseja implementar. Portanto essa escolha tem que estar baseada nas bibliotecas,documentação disponível e a linguagem de programação disponibilizadas para desenvolver oprojeto.
+b) Independe da linguagem de programação escolhida é essencial que tenha como base o Python porse tratar de uma linguagem moderna e bem documentada.
+c) Atualmente, qualquer projeto precisa levar em consideração o modelo cliente-servidor, portantoa escolha do framework deve levar isso em consideração.
+d) Qualquer projeto RAD implementado em Python deve utilizar os frameworks Tkinter e Django.e) A escolha de um framework não deve levar em consideração as necessidades do projeto que sedeseja implementar. Ela tem que estar baseada nas bibliotecas, documentação disponível e alinguagem de programação disponibilizadas para desenvolver o projeto.
+
+
+resposta A
