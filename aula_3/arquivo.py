@@ -4,6 +4,6 @@ def crescente():
         while numero != 101:
             arquivo.write(str(numero)+"; \n")
             numero = numero+1
-
+        arquivo.close()
 
 crescente()
