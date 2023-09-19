@@ -33,17 +33,17 @@ class DbUtils:
         conexao.close()
 
     # 
-    def insert_aluno(self,matricula,nome,curso,valor_nota):
+    def insert_aluno(self,aluno,nota):
         conexao = conector.connect('escola.db')
         cursor = conexao.cursor()
         try:
             sql = '''INSERT INTO tbaluno (matricula, nome, curso)
                        VALUES (?, ?, ?)'''
             
-            cursor.execute(sql, (matricula,nome,curso))
+            cursor.execute(sql, (aluno.matricula,aluno.nome,aluno.curso))
             sql = '''INSERT INTO tbnota (valor, matricula)
                       VALUES (?, ?)'''
-            cursor.execute(sql, (valor_nota, matricula))
+            cursor.execute(sql, (nota.valor, aluno.matricula))
             conexao.commit()
             
         except conector.IntegrityError as e:
@@ -98,7 +98,7 @@ class DbUtils:
             cursor.execute(sql,(newNome,newCurso,matriculaToUpdate))
             conexao.commit()
         except Exception as e :
-            print('ERRO', e)
+            print('ERRO UPDATEALUNO', e)
         finally:
             cursor.close()
             conexao.close()    
@@ -113,10 +113,10 @@ class DbUtils:
                     valor = ?
                 WHERE matricula = ? 
             '''
-            cursor.execute(sql,(newValor,newItem,matriculaToUpdate))
+            cursor.execute(sql,(newItem,newValor,matriculaToUpdate))
             conexao.commit()
         except Exception as e :
-            print('ERRO', e)
+            print('ERRO UPDATENOTA ', e)
         finally:
             cursor.close()
             conexao.close() 
