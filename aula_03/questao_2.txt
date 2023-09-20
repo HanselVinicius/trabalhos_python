@@ -1,0 +1,8 @@
+Questão 2) O Python conta com recursos voltados à gravação e à leitura de arquivos, sejam
+eles binários ou texto. Nos arquivos do tipo texto a primeira providência é abrir o arquivo
+utilizando o método:
+a) open("nome_arquivo",w)
+b) abrir("nome_arquivo",r)
+c) read("nome_arquivo",+wr)
+d) get("nome_arquivo",w)
+e) readline("nome_arquivo",r)
