@@ -1,0 +1,25 @@
+Questão 1) O SQLite é uma biblioteca que implementa as funções de gerenciamento de banco
+de dados de maneira autossuficiente, sem a necessidade de um computador servidor rodando
+um software servidor de banco de dados. Com o Python instalado, o SQLite também está
+instalado.
+Para abrir uma conexão do Python com o SQLite o código correto é:
+a) import sqlite3 conector = sqlite3.connect("exemplo.db")
+b) import sqlite3 conector = sqlite3.connectar("exemplo.db")
+c) import sqlite3 conector = sqlite3.abrir("exemplo.db")
+d) import sqlite3 conector = sqlite3.server("exemplo.db")
+e) import sqlite3 conector = sqlite3.open("exemplo.db")
+
+resposta = A
+
+
+
+Questão 2) Qual é o comando em SQLite para realizar uma operação de criação de uma tabela no
+banco de dados ?
+a) commit
+b) close
+c) execute
+d) create
+e) insert
+
+
+resposta: D

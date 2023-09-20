@@ -1,0 +1,10 @@
+Questão 2) As operações com arquivos são fundamentais na programação, pois os arquivos são umrecurso muito útil para manter a persistência de dados. O Python oferece comandos que permitemque os desenvolvedores possam fazer essas manipulações.
+A respeito da manipulação de arquivos no Python, selecione a opção CORRETA :
+a) Para que um programa que manipula arquivos funcione é necessário fazer o tratamento deexceções.
+b) Apesar de não ser obrigatório o tratamento de exceções, ele deve ser usado sempre para evitarproblemas ao longo da execução do programa
+c) Por se tratar de um recurso que já faz parte do Python padrão, o tratamento de exceções não énecessário.
+d) Para abrir um arquivo texto, por exemplo, sempre é necessário verificar se ele não estácorrompido antes, pois, caso contrário, pode gerar inconsistência no programa.
+e) Os arquivos podem gerar muitos problemas, portanto são um recurso de uso apenas didático.Aplicações reais são desenvolvidas com bancos de dados.
+
+
+resposta: b
