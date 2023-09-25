@@ -1,0 +1,10 @@
+Questão 1) A Linguagem de programação Python permite a inserção em massa de várias linhas
+em uma tabela de banco de dados usando uma única consulta SQL. Pode-se fazer isso usando
+uma consulta parametrizada com o comando:
+a) insertmany()
+b) execute()
+c) inserirmuitos()
+d) executemany
+e) writeln()
+
+resposta: d

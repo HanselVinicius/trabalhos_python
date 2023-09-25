@@ -1,0 +1,9 @@
+Questão 2) Após a execução de comandos de manipulação de registros, tem-se que realizar a
+finalização da transação, e para isso usamos o comando:
+a) commit()
+b) rollback()
+c) persist()
+d) execute()
+e) run()
+
+resposta: a
