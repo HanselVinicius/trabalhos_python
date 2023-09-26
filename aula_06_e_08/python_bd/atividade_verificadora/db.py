@@ -122,5 +122,37 @@ class DbUtils:
             conexao.close() 
     
             
-            
-        
+        ## AULA 08    
+    def selectByMatricula(self,matricula):
+            conexao = conector.connect('escola.db')
+            cursor = conexao.cursor()
+            try:
+                sql = '''
+                    SELECT * FROM tbaluno WHERE 
+                    matricula = ?
+                '''
+                aluno = cursor.execute(sql,(matricula))
+                conexao.commit()
+                return aluno.fetchone()
+            except Exception as e :
+                print('ERRO UPDATENOTA ', e)
+            finally:
+                cursor.close()
+                conexao.close()
+
+    def selectByCurso(self,curso):
+            conexao = conector.connect('escola.db')
+            cursor = conexao.cursor()
+            try:
+                sql = '''
+                    SELECT * FROM tbaluno WHERE 
+                    curso = (?)
+                '''
+                aluno = cursor.execute(sql,(curso,))
+                conexao.commit()
+                return aluno.fetchall()
+            except Exception as e :
+                print('ERRO UPDATENOTA ', e)
+            finally:
+                cursor.close()
+                conexao.close() 
