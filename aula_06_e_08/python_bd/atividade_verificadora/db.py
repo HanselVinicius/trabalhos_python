@@ -156,3 +156,20 @@ class DbUtils:
             finally:
                 cursor.close()
                 conexao.close() 
+
+
+    def notaOrderByAlunoName(self):
+        conexao = conector.connect('escola.db')
+        cursor = conexao.cursor()
+        try:
+            sql = '''
+                SELECT tbaluno.nome,tbnota.valor FROM tbaluno INNER JOIN tbnota ON tbaluno.matricula = tbnota.matricula ORDER BY tbaluno.nome
+            '''
+            result = cursor.execute(sql)
+            conexao.commit()
+            return result.fetchall()
+        except Exception as e:
+            print('ERRO notaOrderByAlunoName ', e)
+        finally:
+            cursor.close()
+            conexao.close()        

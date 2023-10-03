@@ -3,7 +3,6 @@ from aluno import Aluno
 from nota import Nota
 def main():
     db = DbUtils()
-    
 
     while True:
         print("Menu:")
@@ -32,14 +31,7 @@ def main():
             matricula = input("Digite a matrícula: ")
             print( db.selectByMatricula(matricula))
         elif command == "3":
-            lista_alunos = db.select_alunos()
-            lista_notas = db.select_notas()
-            lista_alunos.sort(key= lambda aluno: aluno.nome)
-            lista_notas.sort(key= lambda nota: nota.valor )
-            data_map = {}
-            for aluno, nota in zip(lista_alunos,lista_notas):
-                 data_map[aluno.nome] = nota.valor
-            print(data_map)  
+            print(db.notaOrderByAlunoName())  
         elif command == "4":
             curso = input("Digite o curso: ")
             print(db.selectByCurso(curso=curso))       
