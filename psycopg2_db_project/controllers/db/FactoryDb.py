@@ -65,4 +65,26 @@ class DbFactory:
 
             DbFactory.close_connection(conn)    
 
+    #talvez tenha havido um erro nao sei da onde tirei a tb_produto *-*
+    def create_alunos_tb():
+        conn = DbFactory.get_connection()
+        cursor = conn.cursor()
 
+        cursor.execute("""CREATE TABLE IF NOT EXISTS tb_aluno(
+                
+                codigo serial PRIMARY KEY,
+    
+                nome_aluno varchar(100) NOT NULL,
+    
+                nota1 float NOT NULL,
+    
+                nota2 float NOT NULL,
+    
+                media float NOT NULL,
+    
+                situacao varchar(12) NOT NULL
+    
+                );""")
+        conn.commit()
+        cursor.close()
+        DbFactory.close_connection(conn)
