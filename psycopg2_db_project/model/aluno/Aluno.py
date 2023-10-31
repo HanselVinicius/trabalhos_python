@@ -36,3 +36,5 @@ class Aluno:
     def getSituacao(self):
         return self.situacao
 
+    def __str__(self):
+        return f'id: {self.id} Aluno: {self.nomeAluno} Nota 1: {self.nota1} Nota 2: {self.nota2} Media: {self.media} Situação: {self.situacao}'
